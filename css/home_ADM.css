@@ -43,7 +43,7 @@ button {
     height: 31px;
   }
   .site-title {
-    color: #d01a1a;
+    color: #3B82F6;
     font-size: 24px;
     font-weight: 700;
     margin: 0;
@@ -53,7 +53,7 @@ button {
     gap: 15px;
   }
   .btn-top {
-    background-color: #a90e0e;
+    background-color: #3B82F6;
     color: #ffffff;
     border: none;
     padding: 0 20px;
@@ -65,15 +65,15 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: opacity 0.2s;
+    transition: background-color 0.2s;
   }
   .btn-top:hover {
-    opacity: 0.9;
+    background-color: #87CEFA;
   }
   .header-divider {
     width: 100%;
     height: 1px;
-    background-color: #ff0000;
+    background-color: #87CEFA;
   }
   
   @media (max-width: 768px) {
@@ -136,7 +136,7 @@ button {
     margin-bottom: 100px;
   }
   .welcome-title {
-    color: #d01a1a;
+    color: #3B82F6;
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 40px;
@@ -147,7 +147,7 @@ button {
     font-weight: 700;
   }
   .admin-title {
-    color: #d01a1a;
+    color: #3B82F6;
     font-size: 28px;
     font-weight: 700;
   }
@@ -178,17 +178,19 @@ button {
   .card-btn {
     width: 100%;
     height: 56px;
-    background-color: #c61616;
+    background-color: #3B82F6;
     color: #ffffff;
-    border: 1px solid #c61616;
+    border: 1px solid #3B82F6;
     border-radius: 15px;
     font-size: 20px;
     font-weight: 700;
     cursor: pointer;
     box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
   }
   .card-btn:hover {
+    background-color: #87CEFA;
+    border-color: #87CEFA;
     transform: translateY(-2px);
     box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.2), 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
   }

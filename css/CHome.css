@@ -33,14 +33,14 @@ body {
 }
 
 .btn-primary {
-  background-color: #c62828;
+  background-color: #3B82F6;
   color: #ffffff;
 }
 
 .btn-outline {
   background-color: transparent;
-  color: #c62828;
-  border: 1px solid #c62828;
+  color: #3B82F6;
+  border: 1px solid #3B82F6;
 }
 
 .btn-secondary {
@@ -66,7 +66,7 @@ body {
   .brand {
     font-size: 24px;
     font-weight: 700;
-    color: #c62828;
+    color: #3B82F6;
   }
   .main-nav {
     display: flex;
@@ -82,7 +82,7 @@ body {
     padding: 5px 0;
   }
   .nav-link.active {
-    color: #c62828;
+    color: #3B82F6;
   }
   .nav-underline {
     position: absolute;
@@ -132,7 +132,7 @@ body {
     right: 0;
     bottom: 0;
     width: 55%;
-    background-color: rgba(198, 40, 40, 0.4);
+    background-color: rgba(59, 130, 246, 0.4);
     clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
     z-index: 1;
   }
@@ -163,7 +163,7 @@ body {
     color: #000000;
   }
   .text-red {
-    color: #c62828;
+    color: #3B82F6;
   }
   .hero-description {
     font-size: 20px;
