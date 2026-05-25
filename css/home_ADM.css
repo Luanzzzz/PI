@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* CSS for section section:Header */
+#section-header {
+    width: 100%;
+    background-color: #ffffff;
+  }
+  #section-header .container {
+    max-width: 2070px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 74px;
+  }
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .header-icon {
+    width: 37px;
+    height: 31px;
+  }
+  .site-title {
+    color: #d01a1a;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+  }
+  .header-right {
+    display: flex;
+    gap: 15px;
+  }
+  .btn-top {
+    background-color: #a90e0e;
+    color: #ffffff;
+    border: none;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    min-width: 125px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s;
+  }
+  .btn-top:hover {
+    opacity: 0.9;
+  }
+  .header-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #ff0000;
+  }
+  
+  @media (max-width: 768px) {
+    .site-header {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+      gap: 20px;
+    }
+    .site-title {
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+
+/* CSS for section section:Main */
+#section-main {
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 75px);
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+  .bg-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 2070px;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .bg-shape {
+    position: absolute;
+  }
+  .bg-shape-left {
+    left: 0;
+    top: 296px;
+    width: 292px;
+  }
+  .bg-shape-right {
+    right: 0;
+    top: 0;
+    width: 315px;
+  }
+  
+  #section-main .container {
+    position: relative;
+    z-index: 1;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 60px 40px;
+  }
+  
+  .top-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  .welcome-title {
+    color: #d01a1a;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  .instruction-text {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .admin-title {
+    color: #d01a1a;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  .services-block {
+    text-align: center;
+  }
+  .services-title {
+    color: #000000;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 100px;
+  }
+  
+  .cards-grid {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+  }
+  .action-card {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .card-btn {
+    width: 100%;
+    height: 56px;
+    background-color: #c61616;
+    color: #ffffff;
+    border: 1px solid #c61616;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .card-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.2), 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
+  }
+  .card-desc {
+    color: #000000;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+    width: 100%;
+    padding: 0 10px;
+  }
+  
+  @media (max-width: 1200px) {
+    .cards-grid {
+      gap: 40px;
+    }
+  }
+  @media (max-width: 992px) {
+    .top-row {
+      flex-direction: column;
+      gap: 40px;
+      text-align: center;
+    }
+    .admin-title {
+      text-align: center;
+    }
+    .bg-shape {
+      opacity: 0.1;
+    }
+  }

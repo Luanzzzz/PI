@@ -1,0 +1,42 @@
+:root {
+  --primary-red: #e7171e;
+  --nav-red: #d10909;
+  --title-red: #ff061a;
+  --btn-red: #e40909;
+  --btn-outline-red: #ea1010;
+  --bg-gray: #d9d9d9;
+  --text-black: #000000;
+  --text-dark: #110d0d;
+  --white: #ffffff;
+  --max-width: 1440px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--white);
+  color: var(--text-black);
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,16 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Generated Page</title>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/global.css">
-  <style id="sections-styles">
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #000000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background-color: #c62828;
+  color: #ffffff;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #c62828;
+  border: 1px solid #c62828;
+}
+
+.btn-secondary {
+  background-color: #e2e2e2;
+  color: #000000;
+}
+
 /* CSS for section section:Header */
 #section-header {
     width: 100%;
@@ -161,47 +198,3 @@
     .btn-large { width: 100%; min-width: auto; }
     .hero-bg-shape { width: 100%; clip-path: polygon(0 60%, 100% 40%, 100% 100%, 0 100%); opacity: 0.15; }
   }
-  </style>
-  <script src="global.js" defer></script>
-</head>
-<body>
-<section id="section-header">
-  <header class="site-header">
-    <div class="brand">Portal de cursos Atibaia</div>
-    <nav class="main-nav">
-      <a href="#" class="nav-link active">
-        Inicio
-        <img src="images/20_24.svg" alt="" class="nav-underline">
-      </a>
-      <a href="#" class="nav-link">Cursos</a>
-      <a href="#" class="nav-link">Inscrição</a>
-      <a href="#" class="nav-link">Contato</a>
-    </nav>
-    <div class="header-actions">
-      <button class="btn btn-outline">Cadastar</button>
-      <button class="btn btn-primary">Entrar</button>
-    </div>
-  </header>
-</section>
-<section id="section-hero">
-  <div class="hero-container">
-    <div class="hero-bg-shape"></div>
-    <div class="hero-content">
-      <h1 class="hero-title">Transforme seu futuro</h1>
-      <h2 class="hero-subtitle">
-        <span class="text-black">com</span>
-        <span class="text-red">Educação Gratuita</span>
-      </h2>
-      <p class="hero-description">
-        A Prefeitura de Atibaia oferece cursos de qualificação<br>
-        profissional para impulsionar sua carreira e o desenvolvimento regional
-      </p>
-      <div class="hero-buttons">
-        <button class="btn btn-primary btn-large">Ver cusrsos disponiveis</button>
-        <button class="btn btn-secondary btn-large">Como funciona?</button>
-      </div>
-    </div>
-  </div>
-</section>
-</body>
-</html>

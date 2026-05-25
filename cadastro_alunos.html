@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<title>Portal de Cursos Atibaia</title>
+  <link rel="stylesheet" href="/css/CCadastro_alunos.css">
+</head>
+  <script src="/JS/scriptCadastro_alunos.js" defer></script>
+</head>
+<body>
+<section id="section-header">
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo-wrapper">
+        <img src="images/21_66.svg" alt="Portal de Cursos Atibaia Logo" class="logo-icon">
+        <h1 class="logo-text">Portal de Cursos Atibaia</h1>
+      </div>
+      <nav class="nav-wrapper">
+        <a href="#" class="nav-link">Voltar para o início</a>
+        <a href="#" class="btn-login">Login</a>
+      </nav>
+    </div>
+  </header>
+</section>
+<section id="section-hero">
+  <div class="hero-container">
+    
+    <div class="hero-content">
+      <div class="tag-badge">Inscrição cidadã</div>
+      <h2 class="hero-title">Comece sua <br><span class="highlight">Jornada</span> de <br>Aprendizado</h2>
+      <p class="hero-desc">Preencha seus dados para acessar o catálogo completo de cursos gratuitos oferecidos pela Prefeitura de Atibaia</p>
+      
+      <div class="feature-list">
+        <div class="feature-item">
+          <h3 class="feature-title">Dados Seguros</h3>
+          <p class="feature-text">Suas informações são protegidas pela LGPD e usadas exclusivamente para fins educacionais</p>
+        </div>
+        <div class="feature-item">
+          <h3 class="feature-title">Certificação Gratuita</h3>
+          <p class="feature-text">Ao concluir os cursos, você recebe certificados oficiais da municipalidade</p>
+        </div>
+      </div>
+      
+      <div class="hero-img-container">
+        <img src="images/29ea258ef4e579b315e32d5b2c68f69ea9aee1fe.png" alt="Pessoas estudando e conversando" class="hero-img">
+      </div>
+    </div>
+    
+    <div class="hero-form-wrapper">
+      <div class="form-card">
+        <div class="form-header">
+          <h3 class="form-title">Formulário de Cadastro</h3>
+          <p class="form-subtitle">Os campos marcados com * são obrigatórios</p>
+        </div>
+        
+        <form action="#" method="POST" class="registration-form">
+          <div class="form-group">
+            <label for="nome">Nome Completo *</label>
+            <input type="text" id="nome" class="form-control input-nome" placeholder="Ex: João da Silva Santos" required>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group col-cpf">
+              <label for="cpf">CPF *</label>
+              <input type="text" id="cpf" class="form-control input-cpf" placeholder="000.000.000-00" required>
+            </div>
+            <div class="form-group col-phone">
+              <label for="phone">Número (Phone/Whatsapp) *</label>
+              <input type="text" id="phone" class="form-control input-phone" placeholder="(11) 90000-0000" required>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="endereco">Endereço *</label>
+            <input type="text" id="endereco" class="form-control input-endereco" placeholder="Rua, Número, Bairro, CEP" required>
+          </div>
+          
+          <div class="form-group">
+            <label>Comprovante de Residência (ATIBAIA) *</label>
+            <div class="file-upload-area">
+              <p class="file-upload-text">Clique para anexar ou arraste o arquivo<br>Formatos aceitos : PDF , JPG ou PNG (Máx 5MB)</p>
+            </div>
+          </div>
+          
+          <div class="checkbox-area">
+            <input type="checkbox" id="terms" class="checkbox-input" required>
+            <label for="terms" class="checkbox-label">Eu declaro que as informações acima são verdadeiras e estou de acordo com os <a href="#" class="text-red-link">Termos de Uso</a> e a <a href="#" class="text-red-link">Política de Privacidade</a> da Prefeitura de Atibaia</label>
+          </div>
+          
+          <div class="button-group">
+            <button type="submit" class="btn-submit">Finalizar Cadastro</button>
+            <button type="button" class="btn-cancel">Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+  </div>
+</section>
+</body>
+</html>
