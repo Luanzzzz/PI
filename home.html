@@ -112,17 +112,57 @@
     <div class="login-modal__dialog" role="dialog" aria-labelledby="login-title">
       <a href="#" class="login-modal__close" aria-label="Fechar modal">×</a>
       <h2 id="login-title">Entrar no portal</h2>
-      <p>Escolha o tipo de acesso. A autenticação será implementada na próxima etapa.</p>
+      <p>Escolha o tipo de acesso para informar usuário e senha.</p>
       <div class="login-options">
-        <a href="home_ADM.html" class="login-option">
+        <a href="#login-admin" class="login-option">
           <strong>Administrador</strong>
           <span>Acessar área administrativa</span>
         </a>
-        <a href="usuario.html" class="login-option">
+        <a href="#login-estudante" class="login-option">
           <strong>Estudante</strong>
           <span>Acompanhar cursos matriculados</span>
         </a>
       </div>
+    </div>
+  </div>
+
+  <div class="login-modal" id="login-admin" aria-hidden="true">
+    <div class="login-modal__dialog" role="dialog" aria-labelledby="login-admin-title">
+      <a href="#" class="login-modal__close" aria-label="Fechar modal">×</a>
+      <a href="#login-modal" class="login-modal__back">Voltar</a>
+      <h2 id="login-admin-title">Login do administrador</h2>
+      <p>Informe usuário e senha cadastrados para validação na próxima etapa.</p>
+      <form action="home_ADM.html" method="get" class="login-form">
+        <div class="login-form__field">
+          <label for="admin-usuario">Usuário</label>
+          <input type="text" id="admin-usuario" name="usuario" placeholder="Digite seu usuário" required>
+        </div>
+        <div class="login-form__field">
+          <label for="admin-senha">Senha</label>
+          <input type="password" id="admin-senha" name="senha" placeholder="Digite sua senha" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Entrar como administrador</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="login-modal" id="login-estudante" aria-hidden="true">
+    <div class="login-modal__dialog" role="dialog" aria-labelledby="login-student-title">
+      <a href="#" class="login-modal__close" aria-label="Fechar modal">×</a>
+      <a href="#login-modal" class="login-modal__back">Voltar</a>
+      <h2 id="login-student-title">Login do estudante</h2>
+      <p>Informe usuário e senha cadastrados para validação na próxima etapa.</p>
+      <form action="usuario.html" method="get" class="login-form">
+        <div class="login-form__field">
+          <label for="estudante-usuario">Usuário</label>
+          <input type="text" id="estudante-usuario" name="usuario" placeholder="Digite seu usuário" required>
+        </div>
+        <div class="login-form__field">
+          <label for="estudante-senha">Senha</label>
+          <input type="password" id="estudante-senha" name="senha" placeholder="Digite sua senha" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Entrar como estudante</button>
+      </form>
     </div>
   </div>
 </body>
