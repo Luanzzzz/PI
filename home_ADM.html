@@ -1,71 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Generated Page</title>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Área Administrativa | Portal de Cursos Atibaia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/home_ADM.css">
   <script src="JS/home_ADM.js" defer></script>
 </head>
 <body>
-<section id="section-header">
-  <div class="container">
-    <header class="site-header">
-      <div class="header-left">
-        <img src="images/43_9.svg" alt="Bank Icon" class="header-icon">
-        <h1 class="site-title">Portal de Cursos Atibaia</h1>
-      </div>
-      <div class="header-right">
-        <button class="btn-top">Sair</button>
-        <button class="btn-top">Login</button>
-      </div>
-    </header>
-  </div>
-  <div class="header-divider"></div>
-</section>
-<section id="section-main">
-  <div class="bg-container">
-    <img src="images/63_180.svg" class="bg-shape bg-shape-left" alt="">
-    <img src="images/63_182.svg" class="bg-shape bg-shape-right" alt="">
-  </div>
-  
-  <div class="container">
-    <div class="top-row">
-      <div class="welcome-block">
-        <h2 class="welcome-title">Bem vindo Carlos</h2>
-        <p class="instruction-text">Selecione o que deseja fazer:</p>
-      </div>
-      <div class="admin-block">
-        <h2 class="admin-title">Área do administrador</h2>
-      </div>
+  <header class="admin-header">
+    <div class="admin-header__inner">
+      <a class="admin-brand" href="home_ADM.html">
+        <img src="images/logoAtibaia.png" alt="Prefeitura de Atibaia" class="admin-brand__logo">
+        <span>Portal de Cursos</span>
+      </a>
+      <nav class="admin-actions" aria-label="Ações administrativas">
+        <a href="home.html" class="btn btn-secondary">Sair</a>
+        <a href="home.html#login-modal" class="btn btn-primary">Login</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="services-block">
-      <h3 class="services-title">Serviços Disponíveis</h3>
-      
-      <div class="cards-grid">
-        <div class="action-card">
-          <button class="card-btn">Cadastrar Curso</button>
-          <p class="card-desc">Clique no botão cadastrar curso para realizar novos cadastros</p>
-        </div>
-        
-        <div class="action-card">
-          <button class="card-btn">Conferir Matriculas</button>
-          <p class="card-desc">Clique no botão conferir matriculas, verificar pendências e novas matriculas, avaliar documentos enviados e validar as matriculas</p>
-        </div>
-        
-        <div class="action-card">
-          <button class="card-btn">Sair</button>
-          <p class="card-desc">Desconectar do sistema</p>
-        </div>
+  <main class="admin-page">
+    <section class="admin-hero">
+      <div>
+        <p class="eyebrow">Área do administrador</p>
+        <h1>Bem-vindo, Carlos</h1>
+        <p>Selecione o que deseja fazer no painel administrativo.</p>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+
+    <section class="services-section" aria-labelledby="services-title">
+      <h2 id="services-title">Serviços disponíveis</h2>
+      <div class="cards-grid">
+        <article class="action-card">
+          <h3>Cadastrar curso</h3>
+          <p>Realize novos cadastros de cursos para exibição no portal.</p>
+          <a href="cadastro_cursos.html" class="btn btn-primary">Cadastrar curso</a>
+        </article>
+
+        <article class="action-card">
+          <h3>Conferir matrículas</h3>
+          <p>Verifique pendências, documentos e status das matrículas cadastradas.</p>
+          <a href="alunos_matriculados.html" class="btn btn-primary">Conferir matrículas</a>
+        </article>
+
+        <article class="action-card">
+          <h3>Encerrar acesso</h3>
+          <p>Retorne para a página inicial do portal de cursos.</p>
+          <a href="home.html" class="btn btn-secondary">Sair</a>
+        </article>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

@@ -1,55 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Generated Page</title>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <title>Portal de Cursos Atibaia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/CHome.css">
   <script src="JS/scriptHome.js" defer></script>
 </head>
 <body>
-<section id="section-header">
-  <header class="site-header">
-    <div class="brand">Portal de cursos Atibaia</div>
-    <nav class="main-nav">
-      <a href="#" class="nav-link active">
-        Inicio
-        <img src="images/20_24.svg" alt="" class="nav-underline">
+  <header class="public-header">
+    <div class="public-header__inner">
+      <a class="brand" href="home.html" aria-label="Portal de Cursos Atibaia">
+        <img src="images/logoAtibaia.png" alt="Prefeitura de Atibaia" class="brand__logo">
+        <span class="brand__text">Portal de Cursos</span>
       </a>
-      <a href="#" class="nav-link">Cursos</a>
-      <a href="#" class="nav-link">Inscrição</a>
-      <a href="#" class="nav-link">Contato</a>
-    </nav>
-    <div class="header-actions">
-      <button class="btn btn-outline">Cadastar</button>
-      <button class="btn btn-primary">Entrar</button>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="home.html" class="nav-link active">Início</a>
+        <a href="cursos.html" class="nav-link">Cursos</a>
+        <a href="cadastro_alunos.html" class="nav-link">Inscrição</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="cadastro_alunos.html" class="btn btn-outline">Cadastrar</a>
+        <a href="#login-modal" class="btn btn-primary">Entrar</a>
+      </div>
     </div>
   </header>
-</section>
-<section id="section-hero">
-  <div class="hero-container">
-    <div class="hero-bg-shape"></div>
-    <div class="hero-content">
-      <h1 class="hero-title">Transforme seu futuro</h1>
-      <h2 class="hero-subtitle">
-        <span class="text-black">com</span>
-        <span class="text-red">Educação Gratuita</span>
-      </h2>
-      <p class="hero-description">
-        A Prefeitura de Atibaia oferece cursos de qualificação<br>
-        profissional para impulsionar sua carreira e o desenvolvimento regional
-      </p>
-      <div class="hero-buttons">
-        <button class="btn btn-primary btn-large">Ver cusrsos disponiveis</button>
-        <button class="btn btn-secondary btn-large">Como funciona?</button>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-bg-shape" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Cursos gratuitos em Atibaia</p>
+        <h1>Transforme seu futuro com educação gratuita</h1>
+        <p class="hero-description">
+          A Prefeitura de Atibaia oferece cursos de qualificação profissional para impulsionar sua carreira e o desenvolvimento regional.
+        </p>
+        <div class="hero-buttons">
+          <a href="cursos.html" class="btn btn-primary btn-large">Ver cursos disponíveis</a>
+          <a href="#como-funciona" class="btn btn-secondary btn-large">Como funciona?</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-section" id="como-funciona">
+      <div class="section-heading">
+        <p class="eyebrow">Como funciona</p>
+        <h2>Inscrição simples e acompanhamento pela prefeitura</h2>
+      </div>
+      <div class="info-grid">
+        <article class="info-card">
+          <span class="info-number">1</span>
+          <h3>Escolha um curso</h3>
+          <p>Consulte as opções disponíveis e escolha a formação que combina com seu objetivo.</p>
+        </article>
+        <article class="info-card">
+          <span class="info-number">2</span>
+          <h3>Faça seu cadastro</h3>
+          <p>Preencha seus dados básicos para iniciar a matrícula no curso escolhido.</p>
+        </article>
+        <article class="info-card">
+          <span class="info-number">3</span>
+          <h3>Entregue os documentos</h3>
+          <p>Os documentos serão entregues presencialmente, com orientações enviadas por e-mail.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="courses-preview" id="cursos">
+      <div class="section-heading">
+        <p class="eyebrow">Cursos</p>
+        <h2>Áreas disponíveis</h2>
+      </div>
+      <div class="courses-grid">
+        <article class="course-card">
+          <h3>Informática</h3>
+          <p>Aprenda fundamentos digitais para usar ferramentas do dia a dia com mais segurança.</p>
+          <a href="cadastro_alunos.html">Inscrever-se</a>
+        </article>
+        <article class="course-card">
+          <h3>Elétrica</h3>
+          <p>Conheça conceitos práticos para atuação inicial em instalações e manutenção.</p>
+          <a href="cadastro_alunos.html">Inscrever-se</a>
+        </article>
+        <article class="course-card">
+          <h3>Logística</h3>
+          <p>Entenda processos de transporte, armazenamento e organização de estoques.</p>
+          <a href="cadastro_alunos.html">Inscrever-se</a>
+        </article>
+      </div>
+      <div class="section-action">
+        <a href="cursos.html" class="btn btn-primary">Ver todos os cursos</a>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contato">
+      <div>
+        <p class="eyebrow">Contato</p>
+        <h2>Prefeitura de Atibaia</h2>
+      </div>
+      <p>Mais informações serão encaminhadas pelos canais oficiais informados durante o cadastro.</p>
+    </section>
+  </main>
+
+  <div class="login-modal" id="login-modal" aria-hidden="true">
+    <div class="login-modal__dialog" role="dialog" aria-labelledby="login-title">
+      <a href="#" class="login-modal__close" aria-label="Fechar modal">×</a>
+      <h2 id="login-title">Entrar no portal</h2>
+      <p>Escolha o tipo de acesso. A autenticação será implementada na próxima etapa.</p>
+      <div class="login-options">
+        <a href="home_ADM.html" class="login-option">
+          <strong>Administrador</strong>
+          <span>Acessar área administrativa</span>
+        </a>
+        <a href="usuario.html" class="login-option">
+          <strong>Estudante</strong>
+          <span>Acompanhar cursos matriculados</span>
+        </a>
       </div>
     </div>
   </div>
-</section>
 </body>
 </html>

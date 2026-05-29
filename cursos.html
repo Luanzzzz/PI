@@ -1,438 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Generated Page</title>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="global.css">
-  <style id="sections-styles">
-/* CSS for section section:Header */
-.site-header {
-    background-color: var(--white);
-    border-bottom: 2px solid #87CEFA;
-    padding: 15px 20px;
-    position: relative;
-    z-index: 10;
-  }
-
-  .header-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .logo {
-    color: #3B82F6;
-    font-size: 24px;
-    font-weight: 700;
-  }
-
-  .main-nav {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-  }
-
-  .nav-link {
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--text-black);
-    transition: color 0.3s ease;
-  }
-
-  .nav-link.active {
-    color: #3B82F6;
-  }
-
-  .nav-link:hover {
-    color: #87CEFA;
-  }
-
-  .auth-actions {
-    display: flex;
-    gap: 15px;
-  }
-
-  .btn-cadastrar {
-    background-color: #fffcfc;
-    color: #3B82F6;
-    border: 1px solid #3B82F6;
-    border-radius: 14px;
-    padding: 10px 24px;
-    font-size: 16px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-  }
-
-  .btn-cadastrar:hover {
-    background-color: #f0f8ff;
-  }
-
-  .btn-entrar {
-    background-color: #3B82F6;
-    color: var(--white);
-    border: none;
-    border-radius: 11px;
-    padding: 10px 24px;
-    font-size: 16px;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-  }
-
-  .btn-entrar:hover {
-    background-color: #87CEFA;
-  }
-
-  @media (max-width: 992px) {
-    .header-inner {
-      flex-direction: column;
-      text-align: center;
-    }
-    .main-nav {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
-
-/* CSS for section section:Courses */
-.courses-wrapper {
-    background-color: var(--bg-gray);
-    padding: 60px 0 80px 0;
-    min-height: 953px;
-    overflow: hidden;
-  }
-
-  .relative-container {
-    position: relative;
-    height: 100%;
-    padding: 0 40px;
-  }
-
-  .main-title {
-    color: #3B82F6;
-    font-size: 64px;
-    font-weight: 700;
-    text-align: center;
-    margin: 0 0 80px 0;
-    letter-spacing: 2px;
-  }
-
-  .courses-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 40px;
-    row-gap: 80px;
-    margin-bottom: 80px;
-    position: relative;
-    z-index: 2;
-  }
-
-  .course-card {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .course-title {
-    font-size: 28px;
-    font-weight: 700;
-    color: var(--text-dark);
-    margin: 0 0 20px 0;
-  }
-
-  .course-desc-wrapper {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 20px;
-    flex-grow: 1;
-  }
-
-  .bullet {
-    font-size: 18px;
-    line-height: 1.4;
-    color: var(--text-black);
-  }
-
-  .course-desc {
-    font-size: 14px;
-    line-height: 1.5;
-    color: var(--text-black);
-    margin: 0;
-  }
-
-  .add-btn {
-    background: none;
-    border: none;
-    padding: 0;
-    margin-left: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.2s ease;
-  }
-
-  .add-btn:hover {
-    transform: scale(1.1);
-  }
-
-  .add-btn img {
-    width: 28px;
-    height: 26px;
-    border-radius: 8px;
-  }
-
-  .action-row {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    z-index: 2;
-  }
-
-  .btn-more-courses {
-    background-color: #3B82F6;
-    color: var(--text-black);
-    border: none;
-    border-radius: 11px;
-    padding: 12px 40px;
-    font-size: 16px;
-    font-weight: 600;
-    transition: opacity 0.3s ease;
-  }
-
-  .btn-more-courses:hover {
-    opacity: 0.9;
-  }
-
-  /* Decorative Elements */
-  .decor-top-right {
-    position: absolute;
-    top: -60px;
-    right: -50px;
-    width: 270px;
-    height: 215px;
-    z-index: 1;
-  }
-
-  .merged-svg-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-
-  .decor-svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  .decor-text-tr {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-30%, -50%);
-    margin: 0;
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--text-black);
-    line-height: 1.2;
-  }
-
-  .decor-bottom-left {
-    position: absolute;
-    bottom: -40px;
-    left: -100px;
-    width: 269px;
-    height: 178px;
-    z-index: 1;
-  }
-
-  .decor-svg-bl {
-    width: 100%;
-    height: 100%;
-  }
-
-  .decor-text-bl {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-10%, -50%);
-    margin: 0;
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--text-black);
-    line-height: 1.2;
-  }
-
-  /* Responsive Design */
-  @media (max-width: 1200px) {
-    .courses-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-    .decor-top-right { right: -20px; }
-    .decor-bottom-left { left: -50px; }
-  }
-
-  @media (max-width: 992px) {
-    .courses-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .main-title {
-      font-size: 48px;
-      margin-bottom: 50px;
-    }
-    .decor-top-right, .decor-bottom-left {
-      opacity: 0.3; /* Fade out decorations on smaller screens to avoid text overlap */
-    }
-  }
-
-  @media (max-width: 600px) {
-    .courses-grid {
-      grid-template-columns: 1fr;
-      row-gap: 50px;
-    }
-    .relative-container {
-      padding: 0 20px;
-    }
-    .decor-top-right, .decor-bottom-left {
-      display: none;
-    }
-  }
-  </style>
-  <script src="global.js" defer></script>
+  <title>Cursos Disponíveis | Portal de Cursos Atibaia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/CCursos.css">
+  <script src="JS/scriptCursos.js" defer></script>
 </head>
 <body>
-<section id="section-header">
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#" class="logo">Portal Cursos Atibaia</a>
-      
-      <nav class="main-nav">
-        <a href="#" class="nav-link">Inicio</a>
-        <a href="#" class="nav-link active">Cursos</a>
-        <a href="#" class="nav-link">Inscrição</a>
-        <a href="#" class="nav-link">Contato</a>
+  <header class="public-header">
+    <div class="public-header__inner">
+      <a class="brand" href="home.html" aria-label="Portal de Cursos Atibaia">
+        <img src="images/logoAtibaia.png" alt="Prefeitura de Atibaia" class="brand__logo">
+        <span class="brand__text">Portal de Cursos</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="home.html" class="nav-link">Início</a>
+        <a href="cursos.html" class="nav-link active">Cursos</a>
+        <a href="cadastro_alunos.html" class="nav-link">Inscrição</a>
+        <a href="home.html#contato" class="nav-link">Contato</a>
       </nav>
-      
-      <div class="auth-actions">
-        <button class="btn-cadastrar">Cadastrar</button>
-        <button class="btn-entrar">Entrar</button>
+
+      <div class="header-actions">
+        <a href="cadastro_alunos.html" class="btn btn-outline">Cadastrar</a>
+        <a href="home.html#login-modal" class="btn btn-primary">Entrar</a>
       </div>
     </div>
   </header>
-</section>
-<section id="section-courses">
-  <div class="courses-wrapper">
-    <div class="container relative-container">
-      
-      <!-- Top Right Decorative Element -->
-      <div class="decor-top-right">
-        <div class="merged-svg-wrapper">
-          <!--merged image-->
-          <img src="images/64_103.svg" alt="" class="decor-svg svg-1">
-          <img src="images/64_104.svg" alt="" class="decor-svg svg-2">
-        </div>
-        <p class="decor-text-tr">Sua profissão<br>dos<br>sonhos!</p>
-      </div>
 
-      <h1 class="main-title">CURSOS</h1>
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">Cursos gratuitos</p>
+      <h1>Cursos disponíveis</h1>
+      <p>Escolha uma das formações oferecidas pela Prefeitura de Atibaia e avance para o cadastro.</p>
+    </section>
 
+    <section class="courses-section" aria-label="Lista de cursos">
       <div class="courses-grid">
-        <!-- Row 1 -->
-        <div class="course-card">
-          <h2 class="course-title">Eletrica</h2>
-          <div class="course-desc-wrapper">
-            <span class="bullet">•</span>
-            <p class="course-desc">O Curso de eletrica com n01,n02 com alta comunicação efetiva,com inicio em 08/06/2026 e duraçao de 16 messes...</p>
-          </div>
-          <button class="add-btn"><img src="images/60_77.svg" alt="Add"></button>
-        </div>
+        <article class="course-card">
+          <h2>Elétrica</h2>
+          <p>Curso introdutório para quem deseja aprender conceitos de instalações, segurança e manutenção elétrica.</p>
+          <a href="cadastro_alunos.html" class="btn btn-primary">Inscrever-se</a>
+        </article>
 
-        <div class="course-card">
-          <h2 class="course-title">Culinária</h2>
-          <div class="course-desc-wrapper">
-            <span class="bullet">•</span>
-            <p class="course-desc">O Curso de culinária com material teórico e principalmente diversas cenários e principalmente sofisticando o ...</p>
-          </div>
-          <button class="add-btn"><img src="images/64_77.svg" alt="Add"></button>
-        </div>
+        <article class="course-card">
+          <h2>Culinária</h2>
+          <p>Formação prática com técnicas de preparo, organização de cozinha e noções para atuação profissional.</p>
+          <a href="cadastro_alunos.html" class="btn btn-primary">Inscrever-se</a>
+        </article>
 
-        <div class="course-card">
-          <h2 class="course-title">Indústria</h2>
-          <div class="course-desc-wrapper">
-            <span class="bullet">•</span>
-            <p class="course-desc">O curso de industria objetivo preparar profissionais para atuar em processos industriais, produção e gestão de fábricas...</p>
-          </div>
-          <button class="add-btn"><img src="images/62_37.svg" alt="Add"></button>
-        </div>
+        <article class="course-card">
+          <h2>Indústria</h2>
+          <p>Capacitação voltada a processos produtivos, rotina industrial e boas práticas de organização.</p>
+          <a href="cadastro_alunos.html" class="btn btn-primary">Inscrever-se</a>
+        </article>
 
-        <div class="course-card">
-          <h2 class="course-title">Logística</h2>
-          <div class="course-desc-wrapper">
-            <span class="bullet">•</span>
-            <p class="course-desc">O curso ensina como organizar e otimizar processos de transporte, armazenamento, e gestão de estoques para reduzir custos e aumentar a eficiência das empresas.</p>
-          </div>
-          <button class="add-btn"><img src="images/64_85.svg" alt="Add"></button>
-        </div>
+        <article class="course-card">
+          <h2>Logística</h2>
+          <p>Aprenda fundamentos de transporte, armazenamento, controle de estoque e fluxo de materiais.</p>
+          <a href="cadastro_alunos.html" class="btn btn-primary">Inscrever-se</a>
+        </article>
 
-        <!-- Row 2 -->
-        <div class="course-card">
-          <h2 class="course-title">Informatica</h2>
-          <div class="course-desc-wrapper">
-            <span class="bullet">•</span>
-            <p class="course-desc">O curso de informática básica ensina os fundamentos do uso do computador, permitindo que o aluno utilize ferramentas digitais com segurança e eficiência...</p>
-          </div>
-          <button class="add-btn"><img src="images/64_69.svg" alt="Add"></button>
-        </div>
+        <article class="course-card">
+          <h2>Informática</h2>
+          <p>Curso básico para uso de computadores, ferramentas digitais, internet e recursos do cotidiano profissional.</p>
+          <a href="cadastro_alunos.html" class="btn btn-primary">Inscrever-se</a>
+        </article>
 
-        <div class="course-card">
-          <h2 class="course-title">Gestão</h2>
-          <div class="course-desc-wrapper">
-            <span class="bullet">•</span>
-            <p class="course-desc">O curso de gestão ensina técnicas de administração, liderança e planejamento para melhorar o funcionamento das organizações e auxiliar na tomada de decisões.</p>
-          </div>
-          <button class="add-btn"><img src="images/62_45.svg" alt="Add"></button>
-        </div>
+        <article class="course-card">
+          <h2>Gestão</h2>
+          <p>Desenvolva noções de administração, planejamento, atendimento e organização de atividades.</p>
+          <a href="cadastro_alunos.html" class="btn btn-primary">Inscrever-se</a>
+        </article>
 
-        <div class="course-card">
-          <h2 class="course-title">Costura</h2>
-          <div class="course-desc-wrapper">
-            <span class="bullet">•</span>
-            <p class="course-desc">A Costura é a atividade responsável pela criação, montagem e ajuste de peças de roupa e outros produtos têxteis utilizando técnicas manuais e máquinas de costura.</p>
-          </div>
-          <button class="add-btn"><img src="images/64_53.svg" alt="Add"></button>
-        </div>
+        <article class="course-card">
+          <h2>Costura</h2>
+          <p>Aprenda técnicas iniciais de criação, ajuste e montagem de peças usando práticas manuais e máquinas.</p>
+          <a href="cadastro_alunos.html" class="btn btn-primary">Inscrever-se</a>
+        </article>
 
-        <div class="course-card">
-          <h2 class="course-title">Excel</h2>
-          <div class="course-desc-wrapper">
-            <span class="bullet">•</span>
-            <p class="course-desc">O curso de Excel ensina a utilizar planilhas eletrônicas para organizar informações, fazer cálculos automáticos e analisar dados no ambiente profissional e acadêmico.</p>
-          </div>
-          <button class="add-btn"><img src="images/64_61.svg" alt="Add"></button>
-        </div>
+        <article class="course-card">
+          <h2>Excel</h2>
+          <p>Use planilhas para organizar dados, realizar cálculos e apoiar atividades administrativas.</p>
+          <a href="cadastro_alunos.html" class="btn btn-primary">Inscrever-se</a>
+        </article>
       </div>
-
-      <!-- Bottom Left Decorative Element -->
-      <div class="decor-bottom-left">
-        <img src="images/64_105.svg" alt="" class="decor-svg-bl">
-        <p class="decor-text-bl">comece<br>sua<br>jornada no<br>aprendizado</p>
-      </div>
-
-      <div class="action-row">
-        <button class="btn-more-courses">Mais Cursos</button>
-      </div>
-
-    </div>
-  </div>
-</section>
+    </section>
+  </main>
 </body>
 </html>
