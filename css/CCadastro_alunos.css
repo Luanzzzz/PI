@@ -52,8 +52,10 @@ input {
 }
 
 .logo-icon {
-  width: 37px;
-  height: 31px;
+  height: 45px;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
 }
 
 .logo-text {

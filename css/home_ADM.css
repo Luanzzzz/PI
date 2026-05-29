@@ -39,8 +39,10 @@ button {
     gap: 15px;
   }
   .header-icon {
-    width: 37px;
-    height: 31px;
+  height: 45px;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
   }
   .site-title {
     color: #3B82F6;

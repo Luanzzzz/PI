@@ -32,8 +32,10 @@ body {
 }
 
 .bank-icon {
-  width: 40px;
-  height: 40px;
+  height: 50px;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
 }
 
 .site-title {
@@ -105,7 +107,7 @@ body {
 /* --- Table Card --- */
 .table-container {
   width: 100%;
-  max-width: 1000px; /* Mais largo para caber a tabela */
+  max-width: 1000px;
   z-index: 1;
 }
 
