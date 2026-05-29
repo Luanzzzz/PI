@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>Portal de Cursos Atibaia - Cadastrar Curso</title>
+  <link rel="stylesheet" href="css/CCadastro_cursos.css">
+  <script src="JS/scriptCadastro_curso.js" defer></script>
+</head>
+<body>
+<section id="section-header">
+  <header class="site-header">
+    <div class="header-left">
+      <img src="images/45_3.svg" alt="Bank Icon" class="bank-icon">
+      <h1 class="site-title">Portal de Cursos Atibaia</h1>
+    </div>
+    <div class="header-actions">
+      <button class="btn-action">Sair</button>
+      <button class="btn-action">Login</button>
+    </div>
+  </header>
+</section>
+<section id="section-main">
+  <img src="images/63_178.svg" alt="" class="bg-shape-left">
+  <img src="images/63_176.svg" alt="" class="bg-shape-right">
+  
+  <div class="content-container">
+    <div class="registration-card">
+      <h2 class="card-title">Cadastrar Curso</h2>
+      <div class="form-fields">
+        <div class="form-field">
+          <label for="nomeCurso">Nome do Curso</label>
+          <input type="text" id="nomeCurso" placeholder="Digite o nome do curso">
+        </div>
+        <div class="form-field">
+          <label for="instituicao">Instituição de Ensino</label>
+          <input type="text" id="instituicao" placeholder="Ex: SENAI, ETEC...">
+        </div>
+        <div class="form-field">
+          <label for="cargaHoraria">Carga Horária</label>
+          <input type="text" id="cargaHoraria" placeholder="Ex: 40 horas">
+        </div>
+        <div class="form-field">
+          <label for="categoria">Categoria</label>
+          <input type="text" id="categoria" placeholder="Ex: Tecnologia, Saúde...">
+        </div>
+        <div class="form-field">
+          <label for="descricao">Descrição do Curso</label>
+          <textarea id="descricao" rows="4" placeholder="Detalhes do curso..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Salvar Cadastro</button>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>

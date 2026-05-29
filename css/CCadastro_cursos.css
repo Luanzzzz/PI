@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8fafc;
+  color: #334155;
+}
+
+/* --- Header --- */
+#section-header {
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bank-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.header-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-action {
+  padding: 0.5rem 1.25rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #ffffff;
+  background-color: #2563eb;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-action:first-child {
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
+.btn-action:first-child:hover {
+  background-color: #e2e8f0;
+}
+
+.btn-action:last-child:hover {
+  background-color: #1d4ed8;
+}
+
+/* --- Main Content --- */
+#section-main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 76px);
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.bg-shape-left,
+.bg-shape-right {
+  position: absolute;
+  width: 250px;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.bg-shape-left {
+  left: -50px;
+  top: 10%;
+}
+
+.bg-shape-right {
+  right: -50px;
+  bottom: 10%;
+}
+
+/* --- Registration Card --- */
+.content-container {
+  width: 100%;
+  max-width: 600px;
+  z-index: 1;
+}
+
+.registration-card {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* --- Formulário --- */
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-field label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #475569;
+}
+
+.form-field input,
+.form-field textarea {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  color: #334155;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
+.btn-submit {
+  margin-top: 1rem;
+  padding: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #10b981;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #059669;
+}
+
+/* --- Responsividade --- */
+@media (max-width: 640px) {
+  .registration-card {
+    padding: 1.5rem;
+  }
+  
+  .site-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

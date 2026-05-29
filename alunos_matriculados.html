@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>Portal de Cursos Atibaia - Alunos Matriculados</title>
+  <link rel="stylesheet" href="css/CAlunos_matriculados.css">
+</head>
+<body>
+<section id="section-header">
+  <header class="site-header">
+    <div class="header-left">
+      <img src="images/45_3.svg" alt="Bank Icon" class="bank-icon">
+      <h1 class="site-title">Portal de Cursos Atibaia</h1>
+    </div>
+    <div class="header-actions">
+      <button class="btn-action">Voltar</button>
+      <button class="btn-action">Sair</button>
+    </div>
+  </header>
+</section>
+
+<section id="section-main">
+  <img src="images/63_178.svg" alt="" class="bg-shape-left">
+  <img src="images/63_176.svg" alt="" class="bg-shape-right">
+  
+  <div class="table-container">
+    <div class="data-card">
+      <div class="card-header">
+        <h2 class="card-title">Alunos Matriculados</h2>
+        <span class="unidade-badge">Unidade Responsável: Centro</span>
+      </div>
+      
+      <div class="table-responsive">
+        <table class="students-table">
+          <thead>
+            <tr>
+              <th>Nome do Aluno</th>
+              <th>Curso</th>
+              <th>Data da Matrícula</th>
+              <th>Documentos</th>
+              <th class="text-center">Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Exemplo 1 -->
+            <tr>
+              <td>João Victor da Silva</td>
+              <td>Técnico em Informática</td>
+              <td>15/10/2023</td>
+              <td><span class="status-badge pending">Pendentes</span></td>
+              <td class="action-buttons text-center">
+                <button class="btn-table btn-info">Adicionar Docs</button>
+                <button class="btn-table btn-danger">Cancelar Matrícula</button>
+              </td>
+            </tr>
+            <!-- Exemplo 2 -->
+            <tr>
+              <td>Maria Luiza Souza</td>
+              <td>Design Gráfico</td>
+              <td>12/10/2023</td>
+              <td><span class="status-badge complete">Completos</span></td>
+              <td class="action-buttons text-center">
+                <button class="btn-table btn-warning">Alterar Docs</button>
+                <button class="btn-table btn-danger">Cancelar Matrícula</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+    </div>
+  </div>
+</section>
+</body>
+</html>
