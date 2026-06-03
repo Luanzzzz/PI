@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/CAlunos_matriculados.css">
+  <script src="JS/scriptAlunos_matriculados.js" defer></script>
 </head>
 <body>
   <header class="admin-header">
@@ -18,7 +19,7 @@
       </a>
       <nav class="admin-actions" aria-label="Ações administrativas">
         <a href="home_ADM.html" class="btn btn-secondary">Voltar</a>
-        <a href="home.html" class="btn btn-primary">Sair</a>
+        <a href="home.html" class="btn btn-primary sair-admin">Sair</a>
       </nav>
     </div>
   </header>
@@ -46,43 +47,7 @@
               <th class="text-center">Ações</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>João Victor da Silva</td>
-              <td>joao@email.com</td>
-              <td>000.000.000-00</td>
-              <td>Informática</td>
-              <td><span class="status-badge pending">Pendentes</span></td>
-              <td><span class="status-badge active">Ativa</span></td>
-              <td class="action-buttons text-center">
-                <button class="btn-table btn-info">Confirmar entrega de documentos</button>
-                <button class="btn-table btn-danger">Cancelar matrícula</button>
-              </td>
-            </tr>
-            <tr>
-              <td>Maria Luiza Souza</td>
-              <td>maria@email.com</td>
-              <td>111.111.111-11</td>
-              <td>Excel</td>
-              <td><span class="status-badge complete">Completos</span></td>
-              <td><span class="status-badge active">Ativa</span></td>
-              <td class="action-buttons text-center">
-                <button class="btn-table btn-info">Confirmar entrega de documentos</button>
-                <button class="btn-table btn-danger">Cancelar matrícula</button>
-              </td>
-            </tr>
-            <tr>
-              <td>Ana Beatriz Lima</td>
-              <td>ana@email.com</td>
-              <td>222.222.222-22</td>
-              <td>Logística</td>
-              <td><span class="status-badge pending">Pendentes</span></td>
-              <td><span class="status-badge canceled">Cancelada</span></td>
-              <td class="action-buttons text-center">
-                <button class="btn-table btn-info">Confirmar entrega de documentos</button>
-                <button class="btn-table btn-danger">Cancelar matrícula</button>
-              </td>
-            </tr>
+          <tbody id="lista-alunos">
           </tbody>
         </table>
       </div>

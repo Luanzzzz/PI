@@ -164,6 +164,11 @@ a {
   font-weight: 800;
 }
 
+.status-badge.canceled {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
 .student-course-card h2 {
   margin: 0;
   font-size: 26px;

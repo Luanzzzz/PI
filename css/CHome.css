@@ -223,8 +223,7 @@ a {
 }
 
 .info-section,
-.courses-preview,
-.contact-section {
+.courses-preview {
   max-width: 1180px;
   margin: 0 auto;
   padding: 72px 24px;
@@ -240,8 +239,7 @@ a {
   margin-bottom: 32px;
 }
 
-.section-heading h2,
-.contact-section h2 {
+.section-heading h2 {
   margin: 0;
   color: var(--ink);
   font-size: 36px;
@@ -288,8 +286,7 @@ a {
 }
 
 .info-card p,
-.course-card p,
-.contact-section p {
+.course-card p {
   margin: 0;
   color: var(--muted);
   line-height: 1.6;
@@ -308,18 +305,6 @@ a {
 
 .section-action {
   margin-top: 28px;
-}
-
-.contact-section {
-  display: flex;
-  justify-content: space-between;
-  gap: 32px;
-  align-items: flex-start;
-}
-
-.contact-section p {
-  max-width: 520px;
-  font-size: 18px;
 }
 
 .login-modal {
@@ -472,9 +457,6 @@ a {
     grid-template-columns: 1fr;
   }
 
-  .contact-section {
-    display: block;
-  }
 }
 
 @media (max-width: 560px) {
@@ -514,8 +496,7 @@ a {
   }
 
   .info-section,
-  .courses-preview,
-  .contact-section {
+  .courses-preview {
     padding: 56px 16px;
   }
 }

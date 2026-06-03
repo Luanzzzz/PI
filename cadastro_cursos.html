@@ -19,7 +19,7 @@
       </a>
       <nav class="admin-actions" aria-label="Ações administrativas">
         <a href="home_ADM.html" class="btn btn-secondary">Voltar</a>
-        <a href="home.html" class="btn btn-primary">Sair</a>
+        <a href="home.html" class="btn btn-primary sair-admin">Sair</a>
       </nav>
     </div>
   </header>
@@ -29,7 +29,7 @@
       <div class="section-heading">
         <p class="eyebrow">Administração</p>
         <h1>Cadastrar curso</h1>
-        <p>Preencha as informações principais do curso. O salvamento será implementado na próxima etapa.</p>
+        <p>Preencha as informações principais do curso para exibição no portal.</p>
       </div>
 
       <form action="#" method="post" class="admin-form">
@@ -57,8 +57,20 @@
           </div>
 
           <div class="form-group">
-            <label for="imagemCurso">Link da imagem</label>
-            <input type="url" id="imagemCurso" name="imagemCurso" placeholder="https://exemplo.com/imagem.jpg">
+            <label for="vagas">Quantidade de vagas</label>
+            <input type="number" id="vagas" name="vagas" min="1" placeholder="Ex: 16">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" name="endereco" placeholder="Ex: Unidade Centro - Atibaia">
+          </div>
+
+          <div class="form-group">
+            <label for="horario">Horário</label>
+            <input type="text" id="horario" name="horario" placeholder="Ex: Terças e quintas, das 18h30 às 20h30">
           </div>
         </div>
 

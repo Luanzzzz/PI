@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/CUsuario.css">
+  <script src="JS/scriptUsuario.js" defer></script>
 </head>
 <body>
   <header class="student-header">
@@ -18,7 +19,7 @@
       </a>
       <nav class="student-actions" aria-label="Ações do estudante">
         <a href="home.html" class="btn btn-secondary">Início</a>
-        <a href="home.html" class="btn btn-primary">Sair</a>
+        <a href="home.html" class="btn btn-primary sair-aluno">Sair</a>
       </nav>
     </div>
   </header>
@@ -30,41 +31,7 @@
       <p>Acompanhe as informações dos cursos em que você está matriculado.</p>
     </section>
 
-    <section class="courses-list" aria-label="Cursos matriculados">
-      <article class="student-course-card">
-        <div>
-          <span class="status-badge">Matrícula ativa</span>
-          <h2>Informática básica</h2>
-        </div>
-        <dl>
-          <div>
-            <dt>Endereço</dt>
-            <dd>Centro de Formação Profissional - Atibaia</dd>
-          </div>
-          <div>
-            <dt>Horário</dt>
-            <dd>Segundas e quartas, das 19h às 21h</dd>
-          </div>
-        </dl>
-      </article>
-
-      <article class="student-course-card">
-        <div>
-          <span class="status-badge">Matrícula ativa</span>
-          <h2>Excel</h2>
-        </div>
-        <dl>
-          <div>
-            <dt>Endereço</dt>
-            <dd>Unidade Centro - Atibaia</dd>
-          </div>
-          <div>
-            <dt>Horário</dt>
-            <dd>Terças e quintas, das 18h30 às 20h30</dd>
-          </div>
-        </dl>
-      </article>
-    </section>
+    <section class="courses-list" id="cursos-aluno" aria-label="Cursos matriculados"></section>
   </main>
 </body>
 </html>

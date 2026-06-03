@@ -222,12 +222,6 @@ img {
   color: #7c2d12;
 }
 
-.intro-image {
-  width: 100%;
-  max-width: 460px;
-  border-radius: var(--radius);
-}
-
 .form-card {
   padding: 32px;
   border-radius: var(--radius);

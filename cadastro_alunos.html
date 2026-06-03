@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/CCadastro_alunos.css">
+  <link rel="stylesheet" href="css/footer.css">
   <script src="JS/scriptCadastro_alunos.js" defer></script>
 </head>
 <body>
@@ -22,7 +23,7 @@
         <a href="home.html" class="nav-link">Início</a>
         <a href="cursos.html" class="nav-link">Cursos</a>
         <a href="cadastro_alunos.html" class="nav-link active">Inscrição</a>
-        <a href="home.html#contato" class="nav-link">Contato</a>
+        <a href="#contato" class="nav-link">Contato</a>
       </nav>
 
       <div class="header-actions">
@@ -44,8 +45,6 @@
         <strong>Entrega de documentos</strong>
         <span>Os documentos serão entregues presencialmente. Mais informações serão encaminhadas por e-mail após o cadastro.</span>
       </div>
-
-      <img src="images/29ea258ef4e579b315e32d5b2c68f69ea9aee1fe.png" alt="Pessoas estudando e conversando" class="intro-image">
     </section>
 
     <section class="form-card" aria-labelledby="form-title">
@@ -81,14 +80,6 @@
           <label for="curso">Curso *</label>
           <select id="curso" name="curso" required>
             <option value="">Selecione um curso</option>
-            <option value="eletrica">Elétrica</option>
-            <option value="culinaria">Culinária</option>
-            <option value="industria">Indústria</option>
-            <option value="logistica">Logística</option>
-            <option value="informatica">Informática</option>
-            <option value="gestao">Gestão</option>
-            <option value="costura">Costura</option>
-            <option value="excel">Excel</option>
           </select>
         </div>
 
@@ -99,5 +90,22 @@
       </form>
     </section>
   </main>
+
+  <footer class="public-footer" id="contato">
+    <div class="public-footer__inner">
+      <div class="public-footer__brand">
+        <img src="images/logo_atibaia_fundo_transparente.png" alt="Prefeitura de Atibaia">
+        <p>Portal de Cursos da Prefeitura de Atibaia</p>
+      </div>
+
+      <div class="public-footer__contact">
+        <p><strong>Telefone:</strong> (11) 4414-2000</p>
+        <div class="public-footer__links">
+          <a href="https://www.instagram.com/prefatibaia/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/prefatibaia" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
